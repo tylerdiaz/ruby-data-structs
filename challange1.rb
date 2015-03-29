@@ -1,6 +1,6 @@
 require './stack'
 
-module Implementation
+module Challange1
   def self.print_values(list_node)
     print "#{list_node.value} --> "
     if list_node.next_node.nil?
@@ -24,5 +24,5 @@ end
 stack = Stack.new
 %w(A B C D E F G).map { |char| stack.push(char) }
 
-rev_list = Implementation.reverse_list(stack)
-Implementation.print_values(rev_list.data)
+rev_list = Challange1.reverse_list(stack)
+Challange1.print_values(rev_list.data)
